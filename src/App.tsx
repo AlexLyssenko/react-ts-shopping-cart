@@ -6,6 +6,7 @@ import {About} from "./pages/About"
 import {Navbar} from "./components/Navbar"
 import {ShoppingCartProvider} from "./context/ShoppingCartContext"
 import {PATHS} from "./constants/constants";
+import {Posts} from "./pages/Posts";
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/" element={<Home/>}/>
                     <Route path={`/${PATHS.STORE}`} element={<Store/>}/>
                     <Route path={`/${PATHS.ABOUT}`} element={<About/>}/>
+                    <Route path={`/${PATHS.POSTS}`} element={<Posts/>}/>
                 </Routes>
             </Container>
         </ShoppingCartProvider>
