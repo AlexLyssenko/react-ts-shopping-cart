@@ -21,6 +21,9 @@ export function Navbar() {
                     <Nav.Link to={`/${PATHS.POSTS}`} as={NavLink}>
                         Posts
                     </Nav.Link>
+                    <Nav.Link to={`/${PATHS.NEW_POSTS}`} as={NavLink}>
+                        New Posts
+                    </Nav.Link>
                 </Nav>
                 {cartQuantity > 0 && (
                     <Button

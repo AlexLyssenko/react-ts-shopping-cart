@@ -7,6 +7,7 @@ import {Navbar} from "./components/Navbar"
 import {ShoppingCartProvider} from "./context/ShoppingCartContext"
 import {PATHS} from "./constants/constants";
 import {Posts} from "./pages/Posts";
+import {NewPosts} from "./pages/NewPosts";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <Route path={`/${PATHS.STORE}`} element={<Store/>}/>
                     <Route path={`/${PATHS.ABOUT}`} element={<About/>}/>
                     <Route path={`/${PATHS.POSTS}`} element={<Posts/>}/>
+                    <Route path={`/${PATHS.NEW_POSTS}`} element={<NewPosts/>}/>
                 </Routes>
             </Container>
         </ShoppingCartProvider>
